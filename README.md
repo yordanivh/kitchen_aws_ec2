@@ -38,7 +38,7 @@ Ruby can be installed with `brew install ruby`
 
 * Bundler installed
 
-Bundler can be installed with "gem install bundler"
+Bundler can be installed with `gem install bundler`
 
 ### Steps to use this code
 
@@ -68,7 +68,7 @@ key_files:
 ```
  you need to change the path with the one of your own key. That is to be used to be able to login via ssh on the EC2 instance.
 
-* create a .tfvars file to put in the values of the variables
+* create a `file.tfvars` file to put in the values of the variables
 
 ```
 touch testing.tfvars
@@ -76,10 +76,12 @@ touch testing.tfvars
 
 * put the following infromation there
 
+```
 key_name = "Your key name"
 region = "Region the key is located in"
 ami = "ami-0fc20dd1da406780b"
 instance_type = "t2.micro"
+```
 
 * Now we can perform the test. First step is to create the resource we wil test.
 
